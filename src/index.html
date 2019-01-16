@@ -8,9 +8,26 @@
   <body>
     <div id="root">
       <h1>Hola mundo!</h1>
-      <p>prueba para cambio </p>
+      <form >
+        <h1>Mensaje</h1>
+        <p>¿Escribe lo que deseas?</p>
+        <input type="text" id="text_plano"><br>
+        <p>¿Elige el Offset?</p>
+        <input type="text" id="offset"><br>
+        <a href="#" id="button_encriptar">Encriptar</a>
+        <p id="mensaje_encriptado"></p>
+        <a href="#">enviar</a><br>
+
+
+        <a id= "button_desencriptar"href="#">Desencriptar</a>
+        <p>Mensaje que deseas descifrar</p>
+        <input type="text" id="desencriptar"><br>
+        <a href="#">limpiar</a>
+        <a href="#">enviar</a>
+        
+      </form>
     </div>
-    <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <script src="cipher.js"></script>
   </body>
 </html>
