@@ -6,7 +6,7 @@ window.cipher = {
   
     
     console.log(offset, string);
-    return "hola"
+    return string
   }
 }
 
