@@ -1,24 +1,23 @@
-
-
 const buttonCifrar = document.getElementById("button_encriptar");
+const buttonDescifrar = document.getElementById("button_desencriptar");
+const mensaje = document.getElementById("text_plano");// obtener mensaje 
+const offset_valor = document.getElementById("offset");
+const mensajeEncriptado = document.getElementById("mensaje_encriptado");
 
 buttonCifrar.addEventListener("click", () => {  
-    const mensaje = document.getElementById("text_plano").value.toUpperCase();// obtener mensaje 
-    const offset = document.getElementById("offset").value;// declare para tomar offfset 
-    const msj_cifrado = window.cipher.encode(offset,mensaje);
-    //console.log(msj_cifrado);
-    document.getElementById("mensaje_encriptado").value = msj_cifrado;
-    
+    let mensajeCifrar = mensaje.value.toUpperCase();
+    let offset = offset_valor.value
+    const encriptar = window.cipher.encode(offset,  mensajeCifrar)
+    mensajeEncriptado.value = encriptar  
 });
 
-/*const buttonDescifrar = document.getElementById("button_desencriptar");
 buttonDescifrar.addEventListener("click", () => {  
-    const mensaje = document.getElementById("text_desencriptar").value.toUpperCase();// obtener mensaje 
-    const offset = document.getElementById("offset").value;// declare para tomar offfset 
-    const msj_cifrado = window.cipher.encode(offset,mensaje);
-    //console.log(msj_cifrado);
-    document.getElementById("mensaje_encriptado").innerHTML= msj_cifrado, offset;
-});*/
+    let mensajeDesifrar = mensajeEncriptado.value.toUpperCase();
+    let offsetDecode = offset_valor.value
+    const encriptar = window.cipher.decode(offsetDecode, mensajeDesifrar)
+    //const mensaje = document.getElementById("text_plano"). value = encriptar;
+    mensaje.value = encriptar  
+});
 
 
 

@@ -1,37 +1,34 @@
 window.cipher = {
   // ...
   encode: (offset, mensaje) => {
-    let offsetPasear = parseInt(offset)
+    offset = parseInt(offset)
     let cifrado = ""; 
     for (let i = 0; i < mensaje.length; i++)
     {
       let letra = mensaje[i]
       let obtenerAscii = letra.charCodeAt();
-      let conversion = (obtenerAscii-65+offsetPasear)%26+65;
+      let conversion = (obtenerAscii-65+offset)%26+65;
       
       let resultadoCifrado = String.fromCharCode(conversion);
       cifrado+=resultadoCifrado;
     }
-    //console.log(cifrado);
     return cifrado 
   },
-  /*decode: (offset, mensaje) => {
-    let offsetPasear = parseInt(offset)
+  decode: (offsetDecode, mensajeDecode) => {
+    offsetDecode = parseInt(offsetDecode)
     let cifrado = ""; 
-    for (let i = 0; i < mensaje.length; i++)
+    for (let i = 0; i < mensajeDecode.length; i++)
     {
-      let letra = mensaje[i]
+      let letra = mensajeDecode[i]
       let obtenerAscii = letra.charCodeAt();
-      let conversion = (obtenerAscii+65-offsetPasear)%26+65;
-      
+      let conversion = (obtenerAscii+65-offsetDecode)%26+65;
       let resultadoCifrado = String.fromCharCode(conversion);
       cifrado+=resultadoCifrado;
     }
-    //console.log(cifrado);
     return cifrado 
 
 
-  }*/
+  }
 }
 /*  x - 65 + n ) % 26 + 65*/
 

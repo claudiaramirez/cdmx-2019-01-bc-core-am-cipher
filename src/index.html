@@ -4,25 +4,27 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   </head>
   <body>
     <div id="root">
-      <h1>Love is in the air</h1>
-      <form >
-        <h1>Mensaje</h1>
-        <p>¿Escribe lo que deseas?</p>
-        <input type="text" id="text_plano"><br>
-        <p>¿Elige el Offset?</p>
-        <input type="text" id="offset"><br>
-        <a href="#" id="button_encriptar">Encriptar</a>
-        <a href="#" id= "button_desencriptar">Desencriptar</a>
-        <p>Mensaje que deseas cifrar o descifrar</p>
-        
-
-        <input type="text" id="mensaje_encriptado"><br>
-
-        
-      </form>
+      <header class="header">
+      <h1 class="title_header">Love is in the air</h1>
+    </header>
+    <section class="content">
+      <section class="cifrar">
+        <form >
+          <p>¿Escribe lo que deseas?</p>
+          <input type="text" id="text_plano"  placeholder="Mensaje original"><br>
+          <p>¿Elige el Offset?</p>
+          <input type="text" id="offset" placeholder="Ingresa un numero"><br>
+          <a href="#" id="button_encriptar">Encriptar</a>
+          <a href="#" id= "button_desencriptar">Desencriptar</a>
+          <p>Mensaje que deseas cifrar o descifrar</p>
+          <input type="text" id="mensaje_encriptado" placeholder="Mensaje encriptado"><br> 
+        </form>
+    </section>
+    </section>
     </div>
     <script src="index.js"></script>
     <script src="cipher.js"></script>
