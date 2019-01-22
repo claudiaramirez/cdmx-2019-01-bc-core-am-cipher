@@ -49,20 +49,35 @@ body{
     left: 0;
     margin: auto;
     max-width: 600px ;
-    height: 500px;
-    padding: 30px;
+    height: 620px;
+    padding: 20px;
     border-radius: 5px;
     background: rgba(14, 59, 196, 0.8);
     -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.4);
     box-shadow: 0 5px 10px rgba(0,0,0,.4);  
   }
   .titles_cifrar{
+    margin-top;0;
       font-size: 1.5em;
+
   }
+
   .buttons_cipher{
     margin: 40px;
 
   }
+  .resize{
+    resize: none;
+    width: 75%;
+    height: 100px;
+    outline: none;
+    border: 1px solid #0000cd;
+  }
+  .resize:focus{
+    border: 1px solid #000;
+
+  }
+
   .buttons{
     color: #fff;  
     background-color: #80dd98;

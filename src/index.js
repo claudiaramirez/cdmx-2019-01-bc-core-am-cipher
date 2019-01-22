@@ -19,5 +19,10 @@ buttonDescifrar.addEventListener("click", () => {
     mensaje.value = encriptar  
 });
 
+function Focus(){
+    document.getElementById("text_plano").focus();
+}
+Focus();
+
 
 
