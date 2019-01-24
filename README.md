@@ -1,4 +1,4 @@
-#cifrado cesar mesajeria de parejas 
+# cifrado cesar mesajeria de parejas 
 
 # Principal Usuario
 - Orientado para parejas que deseen enviar mensajes de forma segura encriptando el mensaje
@@ -12,7 +12,7 @@
 
 - El receptor podra visualizar el mensaje encriptado  y al colocar el offeset con el que fue encriptado y dar click derecho en desencriptar mostara el mensaje original en la parte superior 
 
-#Que problemas resuelve 
+# Que problemas resuelve 
 - El usuario podra estar seguro que el mensaje sera encriptado y al menos que se conozca el numero de offset pordra ser desencriptado 
 
 - Dando seguridad de  que puedan enviar cualquier informacion sin que sea leido por terceras personas
