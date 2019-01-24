@@ -1,10 +1,23 @@
 #cifrado cesar mesajeria de parejas 
-Orientado para personas que deseen enviar mensajes de forma segura encriptando el mensaje
-El emisor podra escribir el mensaje y elegir el offeset con el cual sera encriptado 
-El receptor podra visualizar el mensaje y desencriptar o en su caso encriptar un nuevo mensaje 
 
+# Principal Usuario
+- Orientado para parejas que deseen enviar mensajes de forma segura encriptando el mensaje
 
+# Objetivo de usuarios en ralacion al producto 
+- Enviar mensajes seguros sin ser leidos por terceras personas
 
+- Utilizando cifrado cesar 
+
+- El emisor podra escribir el mensaje y elegir el offeset con el cual sera encriptado al dar click en boton encriptar el mensaje lo mostrara encriptado 
+
+- El receptor podra visualizar el mensaje encriptado  y al colocar el offeset con el que fue encriptado y dar click derecho en desencriptar mostara el mensaje original en la parte superior 
+
+#Que problemas resuelve 
+- El usuario podra estar seguro que el mensaje sera encriptado y al menos que se conozca el numero de offset pordra ser desencriptado 
+
+- Dando seguridad de  que puedan enviar cualquier informacion sin que sea leido por terceras personas
+
+- Interfaz intuitiva que permitir a los usuarios, ecribir de manera agil y en poco tiempo tener un mensaje encriptado
 
 
 

@@ -15,16 +15,18 @@
     <section class="content">
       <section class="cifrar">
         <form >
-          <p class="titles_cifrar">¿Escribe lo que deseas?</p>
-          <textarea  class="resize"  name="" id="text_plano" cols="30" rows="10"></textarea>
-          <p class="titles_cifrar">¿Elige el Offset?</p>
-          <input type="text" id="offset" placeholder="Ingresa un numero"><br>
+            <section class="offset">
+                <p class="titles_cifrar">No.Clave</p>
+                <input type="text" id="offset" placeholder="Numero"><br>
+              </section>
+          <p class="titles_cifrar">Mensaje original</p>
+          <textarea  class="resize" placeholder="Escribe tu mensaje" name="" id="text_plano" cols="30" rows="10"></textarea>
           <section class="buttons_cipher">
           <a  class="buttons" href="#" id="button_encriptar">Encriptar</a>
           <a  class="buttons" href="#" id= "button_desencriptar">Desencriptar</a>
         </section>
-          <p class="titles_cifrar">Mensaje que deseas cifrar o descifrar</p>
-          <textarea  class="resize" name="" id="mensaje_encriptado" cols="30" rows="10"></textarea>
+          <p class="titles_cifrar">Mensaje cifrado</p>
+          <textarea  class="resize" placeholder="Escribe tu mensaje cifrado" name="" id="mensaje_encriptado" cols="30" rows="10"></textarea>
         </form>
       </section>
     </section>
