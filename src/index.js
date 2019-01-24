@@ -5,14 +5,17 @@ const offset_valor = document.getElementById("offset");
 const mensajeEncriptado = document.getElementById("mensaje_encriptado");
 
 buttonCifrar.addEventListener("click", () => {  
-    let mensajeCifrar = mensaje.value.toUpperCase();
+    let mensajeCifrar = mensaje.value
     let offset = offset_valor.value
     const encriptar = window.cipher.encode(offset,  mensajeCifrar)
-    mensajeEncriptado.value = encriptar  
+    mensajeEncriptado.value = encriptar 
+    
+    mensaje.value ="";
+    offset_valor.value="";
 });
 
 buttonDescifrar.addEventListener("click", () => {  
-    let mensajeDesifrar = mensajeEncriptado.value.toUpperCase();
+    let mensajeDesifrar = mensajeEncriptado.value;
     let offsetDecode = offset_valor.value
     const encriptar = window.cipher.decode(offsetDecode, mensajeDesifrar)
     //const mensaje = document.getElementById("text_plano"). value = encriptar;

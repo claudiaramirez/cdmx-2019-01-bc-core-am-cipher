@@ -1,4 +1,4 @@
-# cifrado cesar mesajeria de parejas 
+# Cifrado cesar mesajeria de parejas 
 
 # Principal Usuario
 - Orientado para parejas que deseen enviar mensajes de forma segura encriptando el mensaje
