@@ -19,7 +19,9 @@ buttonDescifrar.addEventListener("click", () => {
     let offsetDecode = offset_valor.value
     const encriptar = window.cipher.decode(offsetDecode, mensajeDesifrar)
     //const mensaje = document.getElementById("text_plano"). value = encriptar;
-    mensaje.value = encriptar  
+    mensaje.value = encriptar 
+    mensajeEncriptado.value="";
+    offset_valor.value="";
 });
 
 function Focus(){
