@@ -10,9 +10,9 @@ window.cipher = {
         if (mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90) {
           
             let obtenerAscii = letra.charCodeAt();
-            
+            //console.log(obtenerAscii);
             let conversion = (obtenerAscii-65+offset)%26+65;
-            console.log(conversion);
+            
             let resultadoCifrado = String.fromCharCode(conversion);
             
             cifrado+=resultadoCifrado;
@@ -25,6 +25,10 @@ window.cipher = {
             
             let resultadoCifrado = String.fromCharCode(conversion);
             
+            cifrado+=resultadoCifrado;
+        }else{
+            let resultadoCifrado = String (" ");
+
             cifrado+=resultadoCifrado;
         }
        
@@ -50,6 +54,9 @@ window.cipher = {
           let conversion = (obtenerAscii-122-offsetDecode)%26+122 ;
           let resultadoCifrado = String.fromCharCode(conversion);
           cifrado+=resultadoCifrado;
+        }else{
+            let resultadoCifrado = String (" ");
+            cifrado+=resultadoCifrado;
         }
       }
     return cifrado
