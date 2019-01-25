@@ -12,7 +12,7 @@ window.cipher = {
             let obtenerAscii = letra.charCodeAt();
             
             let conversion = (obtenerAscii-65+offset)%26+65;
-            
+            console.log(conversion);
             let resultadoCifrado = String.fromCharCode(conversion);
             
             cifrado+=resultadoCifrado;
